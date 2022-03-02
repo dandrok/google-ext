@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Stop_Procrastination",
+  "description": "I need to block some youtube channels because of starting be more productive.",
+  "version": "0.0.1",
+  "icons": {
+    "16": "/images/book-stack_16.png",
+    "48": "/images/book-stack_48.png",
+    "128": "/images/book-stack_128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "/images/book-stack_16.png",
+      "48": "/images/book-stack_48.png",
+      "128": "/images/book-stack_128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Block_sider"
+  },
+
+  "author": "dandrok",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://www.youtube.com/*"],
+      "all_frames": true,
+      "css": ["main.css"],
+      "html": ["index.html"],
+      "js": ["index.js"]
+    }
+  ]
+}
