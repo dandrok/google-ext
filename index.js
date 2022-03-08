@@ -8,6 +8,7 @@ const arr = [
   'quin69',
   'kripparrian',
   'exbc',
+  'gaming',
 ]
 
 var oldHref = document.location.href
