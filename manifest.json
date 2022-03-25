@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "run_at": "document_end",
-      "matches": ["https://www.youtube.com/*"],
+      "matches": ["<all_urls>"],
       "all_frames": true,
       "css": ["main.css"],
       "html": ["index.html"],
